@@ -1,0 +1,20 @@
+{
+	"name": "Ds_Silver",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_ADLS1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "retail_sales",
+				"fileSystem": "silver"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	}
+}

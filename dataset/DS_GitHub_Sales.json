@@ -1,0 +1,22 @@
+{
+	"name": "DS_GitHub_Sales",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_GitHub_HTTP",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation",
+				"relativeUrl": "gundu7D/RetailSalesProject/main/SalesData.csv"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
